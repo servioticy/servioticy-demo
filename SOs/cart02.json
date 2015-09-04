@@ -1,0 +1,20 @@
+{
+    "public": "True",
+    "name": "Shopping cart 02",
+    "actions": [],
+    "streams": {
+        "position": {
+            "channels": {
+                "location": {
+                    "type": "geo_point",
+                    "unit": "degrees"
+                },
+                "id": {
+                    "type": "number",
+                    "unit": "identifier"
+                }
+            }
+        }
+    },
+    "description": "Shopping cart for the COMPOSE final demo - Unit 02"
+}

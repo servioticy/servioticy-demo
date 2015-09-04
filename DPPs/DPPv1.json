@@ -1,0 +1,42 @@
+{
+    "name": "Shopping cart aggregation",
+    "version": "0.1.0",
+    "groups": {
+        "AllCarts": {
+            "soIds": [PLACEHOLDER],
+            "stream": "position"
+        }
+    },
+    "streams": {
+        "aggregate": {
+            "channels": {
+                "location": {
+                    "current-value": "{$AllPhones.channels.location.current-value}",
+                    "type": "geo_point",
+                    "unit": "degrees"
+                },
+                "id": {
+                    "current-value": "{$AllCarts.channels.id.current-value}",
+                    "type": "number",
+                    "unit": "identifier"
+                }
+            }
+        },
+        "inLocation": {
+            "pre-filter": "parseFloat({$AllCarts.channels.location.current-value}.split(\",\")[0]) > 41.38970 && parseFloat({$AllCarts.channels.location.current-value}.split(\",\")[0]) < 41.38971 && parseFloat({$AllCarts.channels.location.current-value}.split(\",\")[1]) > 2.112580 && parseFloat({$AllCarts.channels.location.current-value}.split(\",\")[1]) < 2.112590",
+            "channels": {
+                "location": {
+                    "current-value": "{$AllCarts.channels.location.current-value}",
+                    "type": "geo_point",
+                    "unit": "coordinates"
+                },
+                "id": {
+                    "current-value": "{$AllCarts.channels.id.current-value}",
+                    "type": "number",
+                    "unit": "identifier"
+                }
+            }
+        }
+    }
+}
+
