@@ -1,4 +1,5 @@
 at=`cat $1/$IDS_FOLDER/$ACCESS_TOKEN_FILENAME`
+echo $at
 
   response=$(curl --digest -XGET -s  \
      -H "Content-Type: application/json;charset=UTF-8" \
@@ -12,6 +13,7 @@ do
 	echo Deleting ID: $id
    response=$(curl --digest -XDELETE -s \
      --write-out %{http_code} \
+	  -o /dev/null \
      -H "Content-Type: application/json;charset=UTF-8" \
      -H "Authorization: $at" \
      http://$API_PUB_NODES:$API_PUB_SEC_PORT/$id)

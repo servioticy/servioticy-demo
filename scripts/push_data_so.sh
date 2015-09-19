@@ -1,4 +1,3 @@
-
 for file in `ls $SOS_FOLDER`
 do
  id=`cat $1/$IDS_FOLDER/$file.id | perl -pe "s/\"/\n/g" | head -4 | tail -1`
@@ -19,7 +18,6 @@ do
      else
                 echo "OK... Pushed data to SO based on $file, ID: "$id
      fi
-  
 done
 
 sleep 2
