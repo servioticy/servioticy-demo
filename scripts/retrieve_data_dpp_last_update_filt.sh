@@ -9,7 +9,7 @@ do
      -H "Authorization: $at"  \
      --write-out %{http_code} -s\
      -o $TMPDIR/$file.agg.data \
-     http://$API_PUB_NODES:$API_PUB_SEC_PORT/$id/streams/$SAMPLE_DPP_AGG_STREAM/lastUpdate)
+     http://$API_PUB_NODES:$API_PUB_SEC_PORT/$id/streams/$SAMPLE_DPP_FILT_STREAM/lastUpdate)
 
      if [ $response != 200 ];
      then
@@ -17,7 +17,7 @@ do
                then
                   echo "KO... Error retrieving data from DPP filt based on $file -> response: "$response
                else
-					   echo "No data for ID: "$id
+					   echo "No data for ID: "$id", file: "$file", stream: "$SAMPLE_DPP_FILT_STREAM
                fi
      else
                 echo "OK... Retrieved data from DPP based on $file, ID: "$id

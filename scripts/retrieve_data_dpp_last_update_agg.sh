@@ -17,7 +17,7 @@ do
                then
                   echo "KO... Error retrieving data from DPP agg based on $file -> response: "$response
                else
-						echo "No data for ID: "$id
+						echo "No data for ID: "$id", file: "$file", stream: "$SAMPLE_DPP_AGG_STREAM
                fi
      else
                 echo "OK... Retrieved data from DPP based on $file, ID: "$id
