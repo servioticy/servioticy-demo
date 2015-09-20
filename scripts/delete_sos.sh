@@ -1,5 +1,4 @@
 at=`cat $1/$IDS_FOLDER/$ACCESS_TOKEN_FILENAME`
-echo $at
 
   response=$(curl --digest -XGET -s  \
      -H "Content-Type: application/json;charset=UTF-8" \
