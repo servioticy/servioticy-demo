@@ -11,7 +11,7 @@
         "aggregate": {
             "channels": {
                 "location": {
-                    "current-value": "{$AllPhones.channels.location.current-value}",
+                    "current-value": "{$AllCarts.channels.location.current-value}",
                     "type": "geo_point",
                     "unit": "degrees"
                 },
