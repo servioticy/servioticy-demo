@@ -16,7 +16,7 @@ do
      then
                 echo "KO... Error retrieving private subscription from SO based on $file -> response: "$response
      else
-                echo "OK... Retrieved priate subscription from SO based on $file, ID: "$id
+                echo "OK... Retrieved private subscription from SO based on $file, ID: "$id
 					 cat $TMPDIR/subscription_private.json
 					 echo; echo
      fi
