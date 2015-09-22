@@ -8,7 +8,7 @@ do
      -H "Content-Type: application/json;charset=UTF-8" \
      -H "Authorization: $at"  \
      --write-out %{http_code} -s\
-     -o /dev/null \
+     -o $TMPDIR/$file.retrieved.data \
      http://$API_PUB_NODES:$API_PUB_SEC_PORT/$id/streams/$SAMPLE_STREAM)
 
 

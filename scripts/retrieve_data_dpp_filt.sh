@@ -8,7 +8,7 @@ do
  response=$(curl --digest -XGET \
      -H "Content-Type: application/json;charset=UTF-8" \
      -H "Authorization: $at"  \
-     --write-out %{http_code} -s\
+     --write-out %{http_code} -s \
      -o $TMPDIR/$file.filt.data \
      http://$API_PUB_NODES:$API_PUB_SEC_PORT/$id/streams/$SAMPLE_DPP_FILT_STREAM)
 

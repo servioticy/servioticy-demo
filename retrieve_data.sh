@@ -15,5 +15,5 @@ echo
 $SCRIPTS/get_access_token.sh $START_FOLDER
 $SCRIPTS/get_random_access_token.sh $START_FOLDER
 $SCRIPTS/retrieve_data_so.sh $START_FOLDER
-$SCRIPTS/retrieve_data_dpp_agg.sh $START_FOLDER
 $SCRIPTS/retrieve_data_dpp_filt.sh $START_FOLDER
+$SCRIPTS/retrieve_data_dpp_agg.sh $START_FOLDER

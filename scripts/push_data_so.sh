@@ -8,7 +8,7 @@ do
      -H "Authorization: $at"  \
      --write-out %{http_code} -s\
      -d @$1/$SODATA_FOLDER/$file \
-     -o /dev/null \
+     -o $TMPDIR/$file.generate_data.json \
      http://$API_PUB_NODES:$API_PUB_SEC_PORT/$id/streams/$SAMPLE_STREAM)
 
 
