@@ -1,7 +1,12 @@
 #!/bin/bash
-. ../env.sh
 
-START_FOLDER=$PWD
+if [ -z "$ROOT" ]
+then
+    ROOT=$(while ! test -e env.sh.sample; do cd ..; done; pwd)
+    export ROOT
+fi
+
+. $ROOT/env.sh
 
 mkdir -p $IDS_FOLDER
 mkdir -p $TMPDIR

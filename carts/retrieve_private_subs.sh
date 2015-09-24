@@ -1,5 +1,12 @@
 #!/bin/bash
-. ../env.sh
+
+if [ -z "$ROOT" ]
+then
+    ROOT=$(while ! test -e env.sh.sample; do cd ..; done; pwd)
+    export ROOT
+fi
+
+. $ROOT/env.sh
 
 START_FOLDER=$PWD
 
