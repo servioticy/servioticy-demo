@@ -1,19 +1,21 @@
 #!/bin/bash
-. env.sh
+. ../env.sh
 
 START_FOLDER=$PWD
 
 mkdir -p $IDS_FOLDER
+mkdir -p $TMPDIR
 
 echo
 echo "*********************************"
 echo servIoTicy final demo tester
-echo  Retrieving sensor updates
+echo  Listing SOs and DPPs
 echo "*********************************"
 echo
 
 $SCRIPTS/get_access_token.sh $START_FOLDER
 $SCRIPTS/get_random_access_token.sh $START_FOLDER
-$SCRIPTS/retrieve_data_so.sh $START_FOLDER
-$SCRIPTS/retrieve_data_dpp_filt.sh $START_FOLDER
-$SCRIPTS/retrieve_data_dpp_agg.sh $START_FOLDER
+$SCRIPTS/delete_sos.sh $START_FOLDER
+
+echo Done.
+echo

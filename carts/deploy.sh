@@ -1,5 +1,5 @@
 #!/bin/bash
-. env.sh
+. ../env.sh
 
 START_FOLDER=$PWD
 
