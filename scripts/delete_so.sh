@@ -1,4 +1,4 @@
-at=`cat $1/$IDS_FOLDER/$ACCESS_TOKEN_FILENAME`
+at=`cat $ROOT_IDS_FOLDER/$ACCESS_TOKEN_FILENAME`
 
 for file in `ls $SOS_FOLDER`
 do

@@ -1,4 +1,4 @@
-at=`cat $1/$IDS_FOLDER/$ACCESS_TOKEN_FILENAME`
+at=`cat $ROOT_IDS_FOLDER/$ACCESS_TOKEN_FILENAME`
 
   response=$(curl --digest -XGET -s  \
      -H "Content-Type: application/json;charset=UTF-8" \
