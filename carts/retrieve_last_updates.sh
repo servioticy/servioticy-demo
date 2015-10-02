@@ -6,7 +6,7 @@ then
     export ROOT
 fi
 
-. $ROOT/env.sh:
+. $ROOT/env.sh
 
 START_FOLDER=$PWD
 
