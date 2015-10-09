@@ -1,0 +1,27 @@
+{
+    "name": "Wearables aggregation",
+    "version": "0.1.0",
+    "groups": {
+        "AllWearables": {
+            "soIds": [PLACEHOLDER],
+            "stream": "position"
+        }
+    },
+    "streams": {
+        "aggregate": {
+            "channels": {
+                "location": {
+                    "current-value": "{$AllWearables.channels.location.current-value}",
+                    "type": "geo_point",
+                    "unit": "degrees"
+                },
+                "id": {
+                    "current-value": "{$AllWearables.channels.id.current-value}",
+                    "type": "number",
+                    "unit": "identifier"
+                }
+            }
+        }
+    }
+}
+

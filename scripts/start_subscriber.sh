@@ -21,8 +21,10 @@ do
   id=`cat $1/$IDS_FOLDER/$file.id | perl -pe "s/\"/\n/g" | head -4 | tail -1`
   rt=`cat $1/$IDS_FOLDER/$file.id | perl -pe "s/\"/\n/g" | head -8 | tail -1`
   rm -rf $TMPDIR/$SAMPLE_ACTION_DATA
-  echo "      Subscribing to topic /topic/"$rt"."$id".actions"
-  $NODE_HOME/bin/node $SCRIPTS/action_subscribe.js $rt $id > $TMPDIR/$SAMPLE_ACTION_DATA
+  #echo "      Subscribing to topic /topic/"$rt"."$id".actions"
+  echo "      Subscribing to topic /topic/"$id".actions"
+  #$NODE_HOME/bin/node $SCRIPTS/action_subscribe.js $rt $id > $TMPDIR/$SAMPLE_ACTION_DATA
+  $NODE_HOME/bin/node $SCRIPTS/action_subscribe.js $id > $TMPDIR/$SAMPLE_ACTION_DATA
 
 
 done

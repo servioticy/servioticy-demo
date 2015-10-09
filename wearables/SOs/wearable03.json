@@ -1,0 +1,25 @@
+{
+    "public": "True",
+    "name": "Employee Watch 3",
+    "streams": {
+        "position": {
+            "channels": {
+                "location": {
+                    "type": "geo_point",
+                    "unit": "coordinates"
+                },
+                "id": {
+                    "type": "number",
+                    "unit": "identifier"
+                }
+            }
+        }
+    },
+    "actions": [
+	 	{
+			"name": "vibrate",
+			"description": "Vibrate the Wearable"
+		}
+	 ],
+    "description": "Wearable for final demo of COMPOSE"
+}
