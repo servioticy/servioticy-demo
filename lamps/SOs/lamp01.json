@@ -1,0 +1,12 @@
+{
+    "public": "True",
+    "name": "Lamp 01",
+    "actions": [
+		{
+  			"name":"status",
+  			"description":"Set lamp status: on/off"
+  		}
+	 ],
+    "streams": { },
+    "description": "Lamp for the COMPOSE final demo - Unit 01"
+}
