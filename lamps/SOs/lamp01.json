@@ -8,5 +8,8 @@
   		}
 	 ],
     "streams": { },
-    "description": "Lamp for the COMPOSE final demo - Unit 01"
+    "description": "Lamp for the COMPOSE final demo - Unit 01",
+	 "customFields": {
+    	"location": "37.15,2.45"
+    }
 }
