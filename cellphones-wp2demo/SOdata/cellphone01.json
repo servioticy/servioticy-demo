@@ -1,0 +1,14 @@
+{
+    "channels": {
+	"id": {
+            "current-value": 1
+        },
+        "beacon": {
+            "current-value": "00:00:01"
+        },
+        "rssi": {
+            "current-value": -68
+        }
+    },
+    "lastUpdate": 1
+}
