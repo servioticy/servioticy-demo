@@ -1,0 +1,24 @@
+{
+    "public": "True",
+    "name": "Phone Customer 03",
+    "actions": [],
+    "streams": {
+        "detected": {
+            "channels": {
+                "id": {
+                    "type": "number",
+                    "unit": "identifier"
+                },
+                "beacon": {
+                    "type": "string",
+                    "unit": "mac_address"
+                },
+                "rssi": {
+                    "type": "number",
+                    "unit": "dBm"
+                }
+            }
+        }
+    },
+    "description": "Phone of Customer for WP2 final demo of COMPOSE - Unit 03"
+}
