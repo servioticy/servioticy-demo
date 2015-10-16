@@ -10,6 +10,7 @@
     "streams": { },
     "description": "Lamp for the COMPOSE final demo - Unit 01",
 	 "customFields": {
-    	"location": "37.15,2.45"
+    	"x": 37.15,
+		"y": 2.45
     }
 }
