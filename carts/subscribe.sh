@@ -21,4 +21,5 @@ echo
 
 $SCRIPTS/get_access_token.sh $START_FOLDER
 $SCRIPTS/get_random_access_token.sh $START_FOLDER
+$SCRIPTS/create_dpp_subscription.sh $START_FOLDER
 $SCRIPTS/start_dpp_subscriber.sh $START_FOLDER
