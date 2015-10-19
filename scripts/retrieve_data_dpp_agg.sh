@@ -15,7 +15,7 @@ do
 
 	  if [ -f $TMPDIR/$file.agg.data ];
 	  then
-     		items=`cat $TMPDIR/$file.agg.data | perl -pe "s/[,:]/\n/g" | grep location | wc -l`
+     		items=`cat $TMPDIR/$file.agg.data | perl -pe "s/[,:]/\n/g" | grep id | wc -l`
 	  fi
 
 

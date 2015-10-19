@@ -14,7 +14,7 @@ do
 
 	  if [ -f $TMPDIR/$file.filt.data ];
      then
-     			items=`cat $TMPDIR/$file.filt.data | perl -pe "s/[,:]/\n/g" | grep location | wc -l`
+     			items=`cat $TMPDIR/$file.filt.data | perl -pe "s/[,:]/\n/g" | grep id | wc -l`
 	  fi
 
 
