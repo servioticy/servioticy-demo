@@ -1,7 +1,10 @@
 {
     "channels": {
-        "location": {
-            "current-value": "41.389708,2.112587"
+        "x": {
+            "current-value": 41.389708
+        },
+        "y": {
+            "current-value": 2.112587
         },
         "id": {
             "current-value": 2

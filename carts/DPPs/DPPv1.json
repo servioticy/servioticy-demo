@@ -10,10 +10,15 @@
     "streams": {
         "aggregate": {
             "channels": {
-                "location": {
-                    "current-value": "{$AllCarts.channels.location.current-value}",
-                    "type": "geo_point",
-                    "unit": "degrees"
+                "x": {
+                    "current-value": "{$AllCarts.channels.x.current-value}",
+                    "type": "number",
+                    "unit": "cartesian"
+                },
+                "y": {
+                    "current-value": "{$AllCarts.channels.y.current-value}",
+                    "type": "number",
+                    "unit": "cartesian"
                 },
                 "id": {
                     "current-value": "{$AllCarts.channels.id.current-value}",
@@ -23,12 +28,17 @@
             }
         },
         "inLocation": {
-            "pre-filter": "parseFloat({$AllCarts.channels.location.current-value}.split(\",\")[0]) > 41.38970 && parseFloat({$AllCarts.channels.location.current-value}.split(\",\")[0]) < 41.38971 && parseFloat({$AllCarts.channels.location.current-value}.split(\",\")[1]) > 2.112580 && parseFloat({$AllCarts.channels.location.current-value}.split(\",\")[1]) < 2.112590",
+            "pre-filter": "parseFloat({$AllCarts.channels.x.current-value}) > 41.38970 && parseFloat({$AllCarts.channels.x.current-value}) < 41.38971 && parseFloat({$AllCarts.channels.y.current-value}) > 2.112580 && parseFloat({$AllCarts.channels.y.current-value}) < 2.112590",
             "channels": {
-                "location": {
-                    "current-value": "{$AllCarts.channels.location.current-value}",
-                    "type": "geo_point",
-                    "unit": "coordinates"
+                "x": {
+                    "current-value": "{$AllCarts.channels.x.current-value}",
+                    "type": "number",
+                    "unit": "cartesian"
+                },
+                "y": {
+                    "current-value": "{$AllCarts.channels.y.current-value}",
+                    "type": "number",
+                    "unit": "cartesian"
                 },
                 "id": {
                     "current-value": "{$AllCarts.channels.id.current-value}",
