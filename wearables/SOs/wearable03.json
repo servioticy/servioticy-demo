@@ -4,9 +4,13 @@
     "streams": {
         "position": {
             "channels": {
-                "location": {
-                    "type": "geo_point",
-                    "unit": "coordinates"
+                "x": {
+                    "type": "number",
+                    "unit": "cartesian"
+                },
+                "y": {
+                    "type": "number",
+                    "unit": "cartesian"
                 },
                 "id": {
                     "type": "number",

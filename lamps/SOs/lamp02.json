@@ -1,6 +1,6 @@
 {
     "public": "True",
-    "name": "Lamp - Checkout counter 01",
+    "name": "Lamp - Checkout counter 02",
     "actions": [
 		{
   			"name":"status",
@@ -17,9 +17,9 @@
 				}
 	 		}
 	 },
-    "description": "Lamp for the COMPOSE final demo - Unit 01",
+    "description": "Lamp for the COMPOSE final demo - Unit 02",
 	 "customFields": {
-    	"x": 13.795,
-		"y": 1.376
+    	"x": 12.859,
+		"y": 5.169
     }
 }

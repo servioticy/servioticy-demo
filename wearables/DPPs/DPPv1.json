@@ -10,10 +10,15 @@
     "streams": {
         "aggregate": {
             "channels": {
-                "location": {
-                    "current-value": "{$AllWearables.channels.location.current-value}",
-                    "type": "geo_point",
-                    "unit": "degrees"
+                "x": {
+                    "current-value": "{$AllWearables.channels.x.current-value}",
+                    "type": "number",
+                    "unit": "cartesian"
+                },
+                "y": {
+                    "current-value": "{$AllWearables.channels.y.current-value}",
+                    "type": "number",
+                    "unit": "cartesian"
                 },
                 "id": {
                     "current-value": "{$AllWearables.channels.id.current-value}",
