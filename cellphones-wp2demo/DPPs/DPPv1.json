@@ -1,0 +1,46 @@
+{
+    "name": "WP2 final demo DPP",
+    "version": "0.1.0",
+    "groups": {
+        "AllPhones": {
+            "soIds": [ PLACEHOLDER ],
+            "stream": "detected"
+        }
+    },
+    "streams": {
+        "aggregate": {
+            "channels": {
+                "id": {
+                    "current-value": "{$AllPhones.channels.id.current-value}",
+                    "type": "number",
+                    "unit": "identifier"
+                },
+                "beacon": {
+                    "current-value": "{$AllPhones.channels.beacon.current-value}",
+                    "type": "string",
+                    "unit": "mac_address"
+                },
+                "rssi": {
+                    "current-value": "{$AllPhones.channels.rssi.current-value}",
+                    "type": "string",
+                    "unit": "mac_address"
+                }
+            }
+        },
+        "filtered": {
+            "pre-filter": "{$AllPhones.}!=null && {$AllPhones.channels.rssi.current-value}>-70",
+            "channels": {
+                "id": {
+                    "current-value": "{$AllPhones.channels.id.current-value}",
+                    "type": "number",
+                    "unit": "identifier"
+                },
+                "beacon": {
+                    "current-value": "{$AllPhones.channels.beacon.current-value}",
+                    "type": "string",
+                    "unit": "mac_address"
+                }
+            }
+        }
+    }
+}
