@@ -41,10 +41,10 @@ def main():
                 line.append(id)
                 continue
     
-    if not line:
-        print("No line waiting")
-    else:
+    if line:
         print("Line: " + str(len(line)) + " people waiting")
+        request(sys.argv[1] + "/actuations/blink", 'POST', '', headers)
+ 
     return
 
 if __name__ == '__main__':
