@@ -1,0 +1,40 @@
+{
+  "name": "Checkout counter 1",
+  "description": "Demo tag aggregator",
+  "groups": {
+    "AllCarts": {
+      "soIds": [PLACEHOLDER],
+      "stream": "position"
+    }
+  },
+  "streams": {
+    "inLocation": {
+      "pre-filter": "parseFloat({$AllCarts.channels.x.current-value}) > 12.218 && parseFloat({$AllCarts.channels.x.current-value}) < 16.894 && parseFloat({$AllCarts.channels.y.current-value}) > 4.331 && parseFloat({$AllCarts.channels.y.current-value}) < 6.214",
+      "channels": {
+        "x": {
+          "current-value": "{$AllCarts.channels.x.current-value}",
+          "type": "Number",
+          "unit": "cartesian"
+        },
+        "y": {
+          "current-value": "{$AllCarts.channels.y.current-value}",
+          "type": "Number",
+          "unit": "cartesian"
+        },
+        "id": {
+          "current-value": "{$AllCarts.channels.id.current-value}",
+          "type": "String",
+          "unit": "identifier"
+        }
+      }
+    }
+  },
+  "actions": [],
+  "properties": [],
+
+"customFields": {
+      "x": 12.859,
+      "y": 5.169
+    }
+}
+

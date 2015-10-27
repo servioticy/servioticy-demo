@@ -16,5 +16,5 @@ echo Retrieving ID: $id
 curl -i -X POST -H "Content-Type: text/plain" \
    	-H "Authorization: $at" \
    	-d "{\"status\": \"$3\"}" \
-		http://$API_PUB_NODES:$API_PUB_SEC_PORT/$id/actuations/status
+		http://$API_PUB_NODES:$API_PUB_SEC_PORT/$id/actuations/lampstatus
 

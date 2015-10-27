@@ -1,9 +1,9 @@
 {
     "public": "True",
-    "name": "Lamp - Checkout counter 01",
+    "name": "Checkout counter 01",
     "actions": [
 		{
-  			"name":"status",
+  			"name":"lampstatus",
   			"description":"Set lamp status: 0/1"
   		}
 	 ],
@@ -11,6 +11,14 @@
 	 		"status": {
 				"channels": {
 					"lampstatus": {
+						"type": "boolean",
+						"unit": "boolean"
+					}
+				}
+	 		},
+			"queue": {
+				"channels": {
+					"status": {
 						"type": "boolean",
 						"unit": "boolean"
 					}
@@ -23,3 +31,4 @@
 		"y": 1.376
     }
 }
+
