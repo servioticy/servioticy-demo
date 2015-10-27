@@ -1,0 +1,12 @@
+{
+    "public": "True",
+    "name": "Employee Watch 1",
+    "streams": {},
+    "actions": [
+        {
+            "name": "blink",
+            "description": "Blink the led"
+        }
+     ],
+    "description": "Wearable for WP2 demo of COMPOSE"
+}
