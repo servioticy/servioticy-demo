@@ -20,5 +20,21 @@
             }
         }
     },
+    "customFields": {
+        "iserveAnnotation": {
+            "streams": {
+                "positions": {
+                    "channels": {
+                        "x": {
+                            "in": "http://iserve.kmi.open.ac.uk/ns/mso#LocationMeasurement"
+                        },
+                        "y": {
+                            "in": "http://iserve.kmi.open.ac.uk/ns/mso#LocationMeasurement"
+                        }
+                    }
+                }
+            }
+        }
+    },
     "description": "Shopping cart for the COMPOSE final demo - Unit 03"
 }
