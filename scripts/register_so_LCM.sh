@@ -5,7 +5,7 @@ do
   response=$(curl --digest -XPOST \
      --write-out %{http_code} \
      -H "Content-Type: application/json;charset=UTF-8" \
-     -H "Authorization: $at" \
+     -H "Authorization: Bearer $at" \
      -d @$1/$SOS_FOLDER/$file \
      -o $1/$IDS_FOLDER/$file.id -s \
      http://$API_PUB_NODES_LCM:$API_PUB_SEC_PORT_LCM/serviceobjects)

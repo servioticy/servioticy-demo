@@ -6,7 +6,7 @@ do
    response=$(curl --digest -XDELETE -s \
      --write-out %{http_code} \
      -H "Content-Type: application/json;charset=UTF-8" \
-     -H "Authorization: $at" \
+     -H "Authorization: Bearer $at" \
 	  -o /dev/null \
      http://$API_PUB_NODES_LCM:$API_PUB_SEC_PORT_LCM/serviceobjects/$id)
 
